@@ -33,8 +33,12 @@ Or to `.eslintrc`:
 }
 ```
 
-There are also configs for coding in browser and on the website [plug.dj](https://plug.dj), just change the extends to thedark1337/browser or thedark1337/plugdj for either one.
+There are also configs for coding in browser, in ES6, and on the website [plug.dj](https://plug.dj).
+To use them change extends to one of these:
 
+* thedark1337/browser
+* thedark1337/esnext
+* thedark1337/plugdj
 
 ## License
 
