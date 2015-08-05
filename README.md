@@ -1,4 +1,4 @@
-# eslint-config-thedark1337
+# eslint-config-thedark1337  [![Build Status](https://travis-ci.org/thedark1337/eslint-config-thedark1337.svg?branch=master)](https://travis-ci.org/thedark1337/eslint-config-thedark1337)
 
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for [Thedark1337](https://github.com/thedark1337)
 
@@ -7,7 +7,7 @@
 ``` javascript
 npm install --save-dev eslint-config-thedark1337
 ```
-**NOTE: ** This extends [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo/) and utilizes [ESLint](https://eslint.org) to lint code.
+**NOTE:** This extends [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo/) and utilizes [ESLint](https://eslint.org) to lint code.
 ``` javascript
 npm install --save-dev eslint eslint-config-xo
 ```
