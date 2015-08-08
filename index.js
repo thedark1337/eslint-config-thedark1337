@@ -16,7 +16,7 @@ module.exports = {
         'comma-style': [2, 'last'],
         'consistent-return': 0,
         'consistent-this': [2, 'that'],
-        curly: [2, "multi-or-nest"],
+        curly: [2, 'multi-line'],
         eqeqeq: [2, 'smart'],
         'no-eq-null': 0,
         indent: [2, 4, {
