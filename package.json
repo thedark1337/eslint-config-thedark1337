@@ -35,7 +35,7 @@
   "license": "GPL-3.0",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^>=1.1.0",
+    "eslint": ">=1.1.0",
     "eslint-config-xo": ">=0.3.0"
   },
   "repository": {
