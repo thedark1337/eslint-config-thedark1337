@@ -43,7 +43,7 @@
     "url": "https://github.com/thedark1337/eslint-config-thedark1337.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --harmony"
   },
   "dependencies": {
     "deep-assign": "^1.0.0"
