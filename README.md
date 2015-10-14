@@ -1,20 +1,21 @@
-# eslint-config-thedark1337  [![Build Status](https://img.shields.io/travis/thedark1337/eslint-config-thedark1337.svg)](https://travis-ci.org/thedark1337/eslint-config-thedark1337)   [![npm version](http://img.shields.io/npm/v/eslint-config-thedark1337.svg)](https://npmjs.org/package/eslint-config-thedark1337) [![npm downloads](https://img.shields.io/npm/dm/eslint-config-thedark1337.svg)](https://npmjs.org/package/eslint-config-thedark1337) [![Gratipay](https://img.shields.io/gratipay/thedark1337.svg)](https://www.gratipay.com/thedark1337/)
+# eslint-config-thedark1337  [![Build Status](https://img.shields.io/travis/thedark1337/eslint-config-thedark1337.svg)](https://travis-ci.org/thedark1337/eslint-config-thedark1337)   [![npm version](http://img.shields.io/npm/v/eslint-config-thedark1337.svg)](https://npmjs.org/package/eslint-config-thedark1337) [![npm downloads](https://img.shields.io/npm/dm/eslint-config-thedark1337.svg)](https://npmjs.org/package/eslint-config-thedark1337)
 
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for [Thedark1337](https://github.com/thedark1337)
 
 ## Install
 
 ``` javascript
-npm install --save-dev eslint-config-thedark1337
+npm i -D eslint-config-thedark1337
 ```
-**NOTE:** This extends [eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo/) and utilizes [ESLint](https://eslint.org) to lint code.
-``` javascript
-npm install --save-dev eslint eslint-config-xo
+
+**NOTE:** If using esnext,  Babel-eslint and eslint-plugin-babel must be used
+```javascript
+npm i -D babel-eslint eslint-plugin-babel
 ```
 
 ## Usage
 
-Add some ESLint config to your `package.json`:
+Add ESLint config to your `package.json`:
 
 ```json
 {
@@ -33,12 +34,14 @@ Or to `.eslintrc`:
 }
 ```
 
-There are also configs for coding in browser, in ES6, and on the website [plug.dj](https://plug.dj).
+There are also configs for coding in browser, in ES6, and on the website [plug.dj](https://plug.dj) ([RIP](https://plugcubed.net/goodbye) Feb. 2012 -  Sept. 2015).
 To use them change extends to one of these:
 
 * thedark1337/browser
 * thedark1337/esnext
 * thedark1337/plugdj
+
+Thank you to Sindresorhus for their [XO](https://github.com/sindresorhus/eslint-config-xo) Config.
 
 ## License
 
