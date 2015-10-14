@@ -1,8 +1,12 @@
 'use strict';
 
-var def = require('./');
+const deepAssign = require('deep-assign');
+let def = require('./');
 
-def.extends = 'xo/browser';
+def = deepAssign({}, def);
+
+def.ecmaFeatures = {};
+def.env.browser = true;
 def.env.jquery = true;
 def.env.node = false;
 
