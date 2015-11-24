@@ -4,6 +4,8 @@
 
 ## Install
 
+**NOTE:** As of Version 1.0, this config will be inline with ESLint's rules at the latest version.
+
 ``` javascript
 npm i -D eslint-config-thedark1337
 ```
@@ -34,14 +36,16 @@ Or to `.eslintrc`:
 }
 ```
 
-There are also configs for coding in browser, in ES6, and on the website [plug.dj](https://plug.dj) ([RIP](https://plugcubed.net/goodbye) Feb. 2012 -  Sept. 2015).
+There are also configs for coding in browser, and in ES2015+.
+
 To use them change extends to one of these:
 
 * thedark1337/browser
 * thedark1337/esnext
-* thedark1337/plugdj
+
 
 Thank you to Sindresorhus for their [XO](https://github.com/sindresorhus/eslint-config-xo) Config.
+Thank you to Mysticatea for their [Config](https://github.com/mysticatea/eslint-config).
 
 ## License
 
