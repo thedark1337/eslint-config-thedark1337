@@ -15,6 +15,7 @@
     "eslint": "^1.10.1",
     "eslint-plugin-babel": "^2.2.0",
     "mocha": "^2.3.4",
+    "object-assign": "^4.0.1",
     "temp-write": "^2.1.0"
   },
   "engines": {
@@ -24,7 +25,6 @@
     "index.js",
     "esnext.js",
     "browser.js",
-    "plugdj.js"
   ],
   "keywords": [
     "code",
@@ -38,7 +38,7 @@
   "license": "GPL-3.0",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^1.7.x"
+    "eslint": "^1.10.x"
   },
   "repository": {
     "type": "git",
