@@ -10,14 +10,16 @@
 npm i -D eslint-config-thedark1337
 ```
 
-**NOTE:** If using esnext,  Babel-eslint and eslint-plugin-babel must be used
+**NOTE:** If using esnext,  [Babel-eslint](npmjs.com/package/babel-eslint) and [eslint-plugin-babel](https://www.npmjs.com/package/eslint-plugin-babel) must be used
 ```javascript
 npm i -D babel-eslint eslint-plugin-babel
 ```
 
 ## Usage
 
-Add ESLint config to your `package.json`:
+Add ESLint config to one of the following:
+
+`package.json`:
 
 ```json
 {
@@ -28,12 +30,25 @@ Add ESLint config to your `package.json`:
 }
 ```
 
-Or to `.eslintrc`:
+`.eslintrc.js`:
+
+```js
+{
+    "extends": "thedark1337"
+}
+```
+`.eslintrc.json`:
 
 ```json
 {
     "extends": "thedark1337"
 }
+```
+`.eslintrc.yaml`:
+
+```yaml
+    extends:
+        "thedark1337"
 ```
 
 There are also configs for coding in browser, and in ES2015+.
@@ -45,6 +60,7 @@ To use them change extends to one of these:
 
 
 Thank you to Sindresorhus for their [XO](https://github.com/sindresorhus/eslint-config-xo) Config.
+
 Thank you to Mysticatea for their [Config](https://github.com/mysticatea/eslint-config).
 
 ## License
