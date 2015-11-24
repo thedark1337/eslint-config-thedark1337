@@ -5,10 +5,11 @@ let errors;
 const eslint = require('eslint');
 const expect = chai.expect;
 const fs = require('fs');
+const objectAssign = require('object-assign')
 const path = require('path');
 const tempWrite = require('temp-write');
 const validator = require('eslint/lib/config/config-validator');
-const eslintRules = Object.assign(getRuleMap(path.join(__dirname, '../node_modules/eslint/lib/rules/'), ''))
+const eslintRules = objectAssign(getRuleMap(path.join(__dirname, '../node_modules/eslint/lib/rules/'), ''))
 
 function runLint(str, conf) {
     const linter = new eslint.CLIEngine({
