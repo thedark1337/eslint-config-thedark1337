@@ -1,13 +1,14 @@
 'use strict';
 
-const deepAssign = require('deep-assign');
 let def = require('./');
+const merge = require('lodash.merge');
+const newRules ={
+    ecmaFeatures: {},
+    env: {
+        browser: true,
+        jquery: true,
+        node: false
+    }
+};
 
-def = deepAssign({}, def);
-
-def.ecmaFeatures = {};
-def.env.browser = true;
-def.env.jquery = true;
-def.env.node = false;
-
-module.exports = def;
+module.exports = merge({}, def, newRules);
