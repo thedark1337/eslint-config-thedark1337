@@ -197,7 +197,7 @@ module.exports = {
         'one-var': [2, 'never'],
         'operator-assignment': [2, 'always'],
         'operator-linebreak': [2, 'after'],
-        'padded-blocks': [2, 'never'],
+        'padded-blocks': 0,
         'quote-props': [2, 'as-needed'],
         quotes: [2, 'single', 'avoid-escape'],
         'require-jsdoc': 0,
@@ -238,7 +238,7 @@ module.exports = {
 
         // ES2015
         'arrow-body-style': 0,
-        'arrow-parens': [2, 'as-needed'],
+        'arrow-parens': [2, 'always'],
         'arrow-spacing': [2, {
             before: true,
             after: true
@@ -254,11 +254,11 @@ module.exports = {
         'object-shorthand': 2,
         'prefer-arrow-callback': 2,
         'prefer-const': 2,
-        'prefer-reflect': [2, {
+        'prefer-reflect': [1, {
             exceptions: ['delete']
         }],
         'prefer-spread': 2,
         'prefer-template': 2,
-        'require-yield': 0
+        'require-yield': 2
     }
 };
