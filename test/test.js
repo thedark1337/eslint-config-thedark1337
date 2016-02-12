@@ -1,15 +1,11 @@
-'use strict';
-
-const chai = require('chai');
-let errors;
 const eslint = require('eslint');
-const expect = chai.expect;
+const expect = require('unexpected');
 const fs = require('fs');
-const objectAssign = require('object-assign')
 const path = require('path');
+const replacements = require('eslint/conf/replacements.json').rules;
 const tempWrite = require('temp-write');
 const validator = require('eslint/lib/config/config-validator');
-const eslintRules = objectAssign(getRuleMap(path.join(__dirname, '../node_modules/eslint/lib/rules/'), ''))
+const eslintRules = Object.assign(getRuleMap(path.join(__dirname, '../node_modules/eslint/lib/rules/'), ''))
 
 function runLint(str, conf) {
     const linter = new eslint.CLIEngine({
@@ -26,50 +22,55 @@ function getRuleMap(rootPath, prefix) {
         if (path.extname(filename) === '.js') {
             const key = prefix + path.basename(filename, '.js');
 
-            retv[key] = true;
+            if (replacements[key] === undefined) {
+                retv[key] = true;
+            }
         }
         return retv;
     }, {});
 }
-describe('Main Rules Test', function() {
+
+describe('Main Rules Test', () => {
     const mainConf = require('../');
     const mainKeys = Object.keys(mainConf.rules).sort();
     const eslintKeys = Object.keys(eslintRules).sort();
 
-    describe('Syntax Errors', function() {
-        it('Should either exist as a rule or not be configured yet', function() {
-            expect(mainKeys).to.eql(eslintKeys);
+    describe('Syntax Errors', () => {
+
+        it('Should either exist as a rule or not be configured yet', () => {
+            expect(mainKeys, 'to equal', eslintKeys);
         });
 
-        it('Should be valid configuration', function() {
-            expect(validator.validate(mainConf, 'index.js')).to.be.undefined;
+        it('Should be valid configuration', () => {
+            expect(validator.validate(mainConf, 'index.js'), 'to be undefined');
         });
 
-        it('Should be objects', function() {
-            expect(mainConf.ecmaFeatures).to.be.an('object');
-            expect(mainConf.env).to.be.an('object');
-            expect(mainConf.rules).to.be.an('object');
+        it('Should be objects for parserOptions, env, rules', () => {
+            expect(mainConf.parserOptions, 'to be an', 'object');
+            expect(mainConf.env, 'to be an', 'object');
+            expect(mainConf.rules, 'to be an', 'object');
         });
     });
 
-    describe('Linting Errors', function() {
-        it('Should return errors for indentation, quotes, and semicolons', function() {
-            this.timeout(7500);
-            errors = runLint(' \n console.log("thedark1337 Wins")\n', mainConf);
-            expect(errors[0].ruleId).to.equal('no-trailing-spaces');
-            expect(errors[1].ruleId).to.equal('quotes');
-            expect(errors[2].ruleId).to.equal('semi');
+    describe('Linting Errors', () => {
+
+        it('Should return errors for no-trailing-spaces, strict, quotes, and semicolons', () => {
+            const errors = runLint(' \n console.log("thedark1337 Wins")\n', mainConf);
+
+            expect(errors[0].ruleId, 'to be', 'no-trailing-spaces');
+            expect(errors[1].ruleId, 'to be', 'strict');
+            expect(errors[2].ruleId, 'to be', 'quotes');
+            expect(errors[3].ruleId, 'to be', 'semi');
         });
     })
 
 });
 
-
-describe('Browser Rules Test', function() {
+describe('Browser Rules Test', () => {
     const browserConf = require('../browser.js');
 
-    it('Should define all the right environments', function() {
-        expect(browserConf.env).to.deep.equal({
+    it('Should define all the right environments', () => {
+        expect(browserConf.env, 'to have properties', {
             browser: true,
             es6: true,
             jquery: true,
@@ -78,14 +79,25 @@ describe('Browser Rules Test', function() {
     });
 });
 
-describe('ES6 Rules Test', function() {
+describe('ESNext Rules Test', () => {
     const es6Conf = require('../esnext.js');
-    it('Should catch syntax errors', function() {
-        this.timeout(7500);
-        errors = runLint('export class Foo { function() {\n    const x = 0;\n    const y = 0;\n    const z = 0;\n    const foo = 0;\n    console.log(foo);\n    let bar = {\n        x: x,\n        y: y,\n        z: z\n    };\n\n    console.log(bar);\n} }\n', es6Conf);
-        expect(errors[0].ruleId).to.equal('newline-after-var');
-        expect(errors[1].ruleId).to.equal('prefer-const');
-        expect(errors[2].ruleId).to.equal('babel/object-shorthand');
+
+    describe('Syntax Errors', () => {
+
+        it('Should have plugin babel and parser babel-eslint', () => {
+            expect(es6Conf.parser, 'to be', 'babel-eslint');
+            expect(es6Conf.plugins, 'to equal', ['babel']);
+        });
     });
 
+    describe('Linting Errors', () => {
+
+        it('Should return errors for strict, newline-after-var, prefer-const and babel/object-shorthand', () => {
+            const errors = runLint('export class Foo { function() {\n    const x = 0;\n    const y = 0;\n    const z = 0;\n    const foo = 0;\n    console.log(foo);\n    let bar = {\n        x: x,\n        y: y,\n        z: z\n    };\n\n    console.log(bar);\n} }\n', es6Conf);
+
+            expect(errors[0].ruleId, 'to be', 'newline-after-var');
+            expect(errors[1].ruleId, 'to be', 'prefer-const');
+            expect(errors[2].ruleId, 'to be', 'babel/object-shorthand');
+        });
+    });
 });
