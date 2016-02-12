@@ -1,3 +1,14 @@
+## 2-12-2016 Version [2.0.0](https://github.com/thedark1337/eslint-config-thedark1337/compare/v1.0.1...v2.0.0)
+
+* [[`e6d4a71b4b`](https://github.com/thedark1337/eslint-config-thedark1337/commit/e6d4a71b4b)] - Update dependencies and release V2.0.0 (Thedark1337)
+* [[`ce9717aab8`](https://github.com/thedark1337/eslint-config-thedark1337/commit/ce9717aab8)] - **doc**: add that babel-eslint@next is needed for ESNext (Thedark1337)
+
+* [[`28c8cee6cb`](https://github.com/thedark1337/eslint-config-thedark1337/commit/28c8cee6cb)] - **test**: drop support for 0.12 and add 5.0 (Thedark1337)
+* [[`55057a661f`](https://github.com/thedark1337/eslint-config-thedark1337/commit/55057a661f)] - **test**: move mocha cli flags to mocha.opts (Thedark1337)
+* [[`0b055cf4bc`](https://github.com/thedark1337/eslint-config-thedark1337/commit/0b055cf4bc)] - **update**: Tests for ESLint config for V2 (Thedark1337)
+* [[`73c55bba12`](https://github.com/thedark1337/eslint-config-thedark1337/commit/73c55bba12)] - **update**: main config to ESLint V2 (Thedark1337)
+* [[`e9d46faa7d`](https://github.com/thedark1337/eslint-config-thedark1337/commit/e9d46faa7d)] - **update**: ESNext rules to ESLint v2 (Thedark1337)
+
 ## 12-7-2015 Version [1.0.1](https://github.com/thedark1337/eslint-config-thedark1337/compare/v1.0.0...v1.0.1)
 
 * [[`91d483a513`](https://github.com/thedark1337/eslint-config-thedark1337/commit/91d483a513)] - **Update**: Tweak a few rules (thedark1337)
