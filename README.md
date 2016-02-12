@@ -10,7 +10,7 @@
 npm i -D eslint-config-thedark1337
 ```
 
-**NOTE:** If using esnext,  [Babel-eslint](npmjs.com/package/babel-eslint) and [eslint-plugin-babel](https://www.npmjs.com/package/eslint-plugin-babel) must be used
+**NOTE:** If using esnext,  [Babel-eslint](npmjs.com/package/babel-eslint) and [eslint-plugin-babel](https://www.npmjs.com/package/eslint-plugin-babel) must be used. If using ESLint@2 please use babel-eslint@next (beta)
 ```javascript
 npm i -D babel-eslint eslint-plugin-babel
 ```
@@ -33,7 +33,7 @@ Add ESLint config to one of the following:
 `.eslintrc.js`:
 
 ```js
-{
+module.exports = {
     "extends": "thedark1337"
 }
 ```
