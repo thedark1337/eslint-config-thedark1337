@@ -1,11 +1,11 @@
 'use strict';
 
 module.exports = {
-    ecmaFeatures: {
-        blockBindings: true,
-        modules: true,
-        jsx: true,
-        experimentalObjectRestSpread: true
+    parserOptions: {
+        ecmaVersion: 6,
+        ecmaFeatures: {
+            jsx: true
+        }
     },
     env: {
         node: true,
@@ -41,6 +41,7 @@ module.exports = {
 
         // Best Practices
         'accessor-pairs': 2,
+        'array-callback-return': 1,
         'block-scoped-var': 2,
         complexity: 0,
         'consistent-return': 0,
@@ -56,16 +57,18 @@ module.exports = {
         'no-div-regex': 2,
         'no-else-return': 2,
         'no-eq-null': 0,
-        'no-empty-label': 2,
+        'no-empty-function': 0,
         'no-empty-pattern': 2,
         'no-eval': 2,
         'no-extend-native': 2,
         'no-extra-bind': 2,
+        'no-extra-label': 2,
         'no-extra-parens': 0,
         'no-fallthrough': 2,
         'no-floating-decimal': 2,
         'no-implicit-coercion': 2,
         'no-implied-eval': 2,
+        'no-implicit-globals': 0,
         'no-invalid-this': 0,
         'no-iterator': 2,
         'no-labels': 2,
@@ -85,10 +88,13 @@ module.exports = {
         'no-redeclare': 2,
         'no-return-assign': [2, 'always'],
         'no-script-url': 2,
+        'no-self-assign': 1,
         'no-self-compare': 2,
         'no-sequences': 2,
         'no-throw-literal': 2,
+        'no-unmodified-loop-condition': 2,
         'no-unused-expressions': 2,
+        'no-unused-labels': 2,
         'no-useless-call': 2,
         'no-useless-concat': 2,
         'no-void': 2,
@@ -129,6 +135,7 @@ module.exports = {
         'no-new-require': 2,
         'no-path-concat': 2,
         'no-process-exit': 2,
+        'no-restricted-imports': 0,
         'no-restricted-modules': 0,
         'no-sync': 2,
 
@@ -153,6 +160,7 @@ module.exports = {
         'func-style': [2, 'declaration', {
             allowArrowFunctions: true
         }],
+        'id-blacklist': 0,
         'id-length': 0,
         'id-match': 0,
         'indent': [2, 4, {
@@ -163,6 +171,7 @@ module.exports = {
             beforeColon: false,
             afterColon: true
         }],
+        'keyword-spacing': 2,
         'linebreak-style': [2, 'unix'],
         'lines-around-comment': [2, {
             beforeBlockComment: true,
@@ -175,6 +184,7 @@ module.exports = {
         }],
         'new-parens': 2,
         'newline-after-var': 2,
+        'newline-per-chained-call': 2,
         'no-array-constructor': 2,
         'no-continue': 0,
         'no-inline-comments': 0,
@@ -193,8 +203,10 @@ module.exports = {
         'no-trailing-spaces': 2,
         'no-underscore-dangle': 0,
         'no-unneeded-ternary': 2,
+        'no-whitespace-before-property': 2,
         'object-curly-spacing': [2, 'always'],
         'one-var': [2, 'never'],
+        'one-var-declaration-per-line': [2, 'initializations'],
         'operator-assignment': [2, 'always'],
         'operator-linebreak': [2, 'after'],
         'padded-blocks': 0,
@@ -206,9 +218,8 @@ module.exports = {
             after: true
         }],
         'semi': [2, 'always'],
+        'sort-imports': 0,
         'sort-vars': 0,
-        'space-after-keywords': [2, 'always'],
-        'space-before-keywords': [2, 'always'],
         'space-before-blocks': [2, 'always'],
         'space-before-function-paren': [2, {
             anonymous: 'never',
@@ -216,7 +227,6 @@ module.exports = {
         }],
         'space-in-parens': [2, 'never'],
         'space-infix-ops': 2,
-        'space-return-throw-case': 2,
         'space-unary-ops': 2,
         'spaced-comment': [1, 'always'],
         'valid-jsdoc': [2, {
@@ -245,20 +255,30 @@ module.exports = {
         }],
         'constructor-super': 2,
         'generator-star-spacing': [2, 'both'],
-        'no-arrow-condition': 1,
+
         'no-class-assign': 2,
+        'no-confusing-arrow': 2,
         'no-const-assign': 2,
         'no-dupe-class-members': 2,
+        'no-new-symbol': 2,
         'no-this-before-super': 2,
+        'no-useless-constructor': 2,
         'no-var': 2,
         'object-shorthand': 2,
         'prefer-arrow-callback': 2,
         'prefer-const': 2,
-        'prefer-reflect': [1, {
+
+        // TODO: Enable when Node.js officially supports Reflect ES2015 in LTS
+        'prefer-reflect': [0, {
             exceptions: ['delete']
         }],
+
+        // TODO: Enable when Node.js officially supports rest params in LTS.
+        'prefer-rest-params': 0,
         'prefer-spread': 2,
         'prefer-template': 2,
-        'require-yield': 2
+        'require-yield': 2,
+        'template-curly-spacing': 2,
+        'yield-star-spacing': [2, 'before']
     }
 };
