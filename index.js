@@ -184,7 +184,7 @@ module.exports = {
         }],
         'new-parens': 2,
         'newline-after-var': 2,
-        'newline-per-chained-call': 2,
+        'newline-per-chained-call': 1,
         'no-array-constructor': 2,
         'no-continue': 0,
         'no-inline-comments': 0,
