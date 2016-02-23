@@ -1,8 +1,9 @@
 'use strict';
 
-let def = require('./');
+const def = require('./');
 const merge = require('lodash.merge');
-const newRules ={
+
+const newRules = {
     ecmaFeatures: {},
     env: {
         browser: true,

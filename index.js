@@ -12,6 +12,7 @@ module.exports = {
         es6: true
     },
     rules: {
+
         // Possible Errors
         'comma-dangle': 2,
         'no-cond-assign': 2,
@@ -145,7 +146,7 @@ module.exports = {
         'brace-style': [2, '1tbs', {
             allowSingleLine: false
         }],
-        'camelcase': [2, {
+        camelcase: [2, {
             properties: 'always'
         }],
         'comma-spacing': [2, {
@@ -163,7 +164,7 @@ module.exports = {
         'id-blacklist': 0,
         'id-length': 0,
         'id-match': 0,
-        'indent': [2, 4, {
+        indent: [2, 4, {
             SwitchCase: 1
         }],
         'jsx-quotes': 2,
@@ -217,7 +218,7 @@ module.exports = {
             before: false,
             after: true
         }],
-        'semi': [2, 'always'],
+        semi: [2, 'always'],
         'sort-imports': 0,
         'sort-vars': 0,
         'space-before-blocks': [2, 'always'],
@@ -230,7 +231,7 @@ module.exports = {
         'space-unary-ops': 2,
         'spaced-comment': [1, 'always'],
         'valid-jsdoc': [2, {
-            'prefer': {
+            prefer: {
                 return: 'returns'
             },
             requireReturn: false
