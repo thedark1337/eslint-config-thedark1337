@@ -7,7 +7,7 @@
     "url": "https://github.com/thedark1337/eslint-config-thedark1337/issues"
   },
   "dependencies": {
-    "lodash.merge": "^4.1.0"
+    "lodash.merge": "^4.3.1"
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0-beta10",
