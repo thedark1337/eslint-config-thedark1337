@@ -7,7 +7,8 @@ const options = {
 const paths = [
     'browser.js',
     'esnext.js',
-    'index.js'
+    'index.js',
+    'test/*.js'
 ];
 
 lint(paths, options);
