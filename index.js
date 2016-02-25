@@ -173,7 +173,7 @@ module.exports = {
             afterColon: true
         }],
         'keyword-spacing': 2,
-        'linebreak-style': [2, 'unix'],
+        'linebreak-style': 0,
         'lines-around-comment': [2, {
             beforeBlockComment: true,
             beforeLineComment: true
