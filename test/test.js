@@ -1,3 +1,5 @@
+'use strict';
+
 const eslint = require('eslint');
 const expect = require('unexpected');
 const fs = require('fs');
@@ -5,7 +7,7 @@ const path = require('path');
 const replacements = require('eslint/conf/replacements.json').rules;
 const tempWrite = require('temp-write');
 const validator = require('eslint/lib/config/config-validator');
-const eslintRules = Object.assign(getRuleMap(path.join(__dirname, '../node_modules/eslint/lib/rules/'), ''))
+const eslintRules = Object.assign(getRuleMap(path.join(__dirname, '../node_modules/eslint/lib/rules/'), ''));
 
 function runLint(str, conf) {
     const linter = new eslint.CLIEngine({
@@ -18,7 +20,7 @@ function runLint(str, conf) {
 
 // Copied from https://github.com/mysticatea/eslint-config. Thank you to mysticatea
 function getRuleMap(rootPath, prefix) {
-    return fs.readdirSync(rootPath).reduce(function makeMap(retv, filename) {
+    return fs.readdirSync(rootPath).reduce((retv, filename) => { // eslint-disable-line no-sync
         if (path.extname(filename) === '.js') {
             const key = prefix + path.basename(filename, '.js');
 
@@ -62,7 +64,7 @@ describe('Main Rules Test', () => {
             expect(errors[2].ruleId, 'to be', 'quotes');
             expect(errors[3].ruleId, 'to be', 'semi');
         });
-    })
+    });
 
 });
 
@@ -75,7 +77,7 @@ describe('Browser Rules Test', () => {
             es6: true,
             jquery: true,
             node: false
-        })
+        });
     });
 });
 
