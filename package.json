@@ -7,17 +7,17 @@
     "url": "https://github.com/thedark1337/eslint-config-thedark1337/issues"
   },
   "dependencies": {
-    "lodash.merge": "^4.3.1"
+    "lodash.merge": "^4.3.2"
   },
   "devDependencies": {
-    "babel-eslint": "^5.0.0-beta10",
-    "eslint": "^2.2.0",
+    "babel-eslint": "^5.0.0",
+    "eslint": "2.2.x",
     "eslint-plugin-babel": "^3.1.0",
     "is-ci": "^1.0.8",
     "mocha": "^2.4.5",
     "mocha-eslint": "^2.0.1",
     "temp-write": "^2.1.0",
-    "unexpected": "^10.9.0"
+    "unexpected": "^10.10.4"
   },
   "engines": {
     "node": ">=4.0"
@@ -39,7 +39,7 @@
   "license": "GPL-3.0",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": ">=2.0.0"
+    "eslint": "2.2.x"
   },
   "repository": {
     "type": "git",
