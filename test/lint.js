@@ -1,8 +1,8 @@
 'use strict';
-
+const isCI = Boolean(process.env.CI || process.env.CONTINUOUS_INTEGRATION);
 const lint = require('mocha-eslint');
 const options = {
-    alwaysWarn: require('is-ci')
+    alwaysWarn: !isCI
 };
 const paths = [
     'browser.js',
