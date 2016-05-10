@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^6.0.4",
-    "eslint": "2.2.x",
+    "eslint": "^2.9.0",
     "eslint-plugin-babel": "^3.2.0",
     "mocha": "^2.4.5",
     "mocha-eslint": "^2.0.2",
@@ -38,7 +38,7 @@
   "license": "GPL-3.0",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "2.2.x"
+    "eslint": ">=2.x"
   },
   "repository": {
     "type": "git",
