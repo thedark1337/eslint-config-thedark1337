@@ -28,6 +28,7 @@ function getRuleMap(rootPath, prefix) {
                 retv[key] = true;
             }
         }
+
         return retv;
     }, {});
 }
