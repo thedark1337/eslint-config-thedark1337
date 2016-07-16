@@ -33,6 +33,7 @@ module.exports = {
         'no-irregular-whitespace': 2,
         'no-negated-in-lhs': 2,
         'no-obj-calls': 2,
+        'no-prototype-builtins': 0,
         'no-regex-spaces': 2,
         'no-sparse-arrays': 2,
         'no-unexpected-multiline': 2,
@@ -181,6 +182,7 @@ module.exports = {
             beforeBlockComment: true,
             beforeLineComment: true
         }],
+        'max-lines': 0,
         'max-nested-callbacks': [1, 4],
         'max-statements-per-line': 1,
         'new-cap': [2, {
@@ -195,6 +197,7 @@ module.exports = {
         'no-continue': 0,
         'no-inline-comments': 0,
         'no-lonely-if': 1,
+        'no-mixed-operators': 2,
         'no-mixed-spaces-and-tabs': 2,
         'no-multiple-empty-lines': [2, {
             max: 1
@@ -210,8 +213,18 @@ module.exports = {
         'no-underscore-dangle': 0,
         'no-unneeded-ternary': 2,
         'no-whitespace-before-property': 2,
+        'object-curly-newline': [2, {
+            ObjectExpression: {
+                minProperties: 1
+            },
+            ObjectPattern: {
+                minProperties: 1
+            }
+        }],
         'object-curly-spacing': [2, 'always'],
-        'object-property-newline': [2, { allowMultiplePropertiesPerLine: true }],
+        'object-property-newline': [2, {
+            allowMultiplePropertiesPerLine: true
+        }],
         'one-var': [2, 'never'],
         'one-var-declaration-per-line': [2, 'initializations'],
         'operator-assignment': [2, 'always'],
@@ -236,6 +249,7 @@ module.exports = {
         'space-infix-ops': 2,
         'space-unary-ops': 2,
         'spaced-comment': [1, 'always'],
+        'unicode-bom': 0,
         'valid-jsdoc': [2, {
             prefer: {
                 return: 'returns'
@@ -261,6 +275,7 @@ module.exports = {
             after: true
         }],
         'constructor-super': 2,
+        'rest-spread-spacing': [2, 'never'],
         'generator-star-spacing': [2, 'both'],
 
         'no-class-assign': 2,
@@ -272,6 +287,7 @@ module.exports = {
         'no-this-before-super': 2,
         'no-useless-computed-key': 2,
         'no-useless-constructor': 2,
+        'no-useless-rename': 2,
         'no-var': 2,
         'object-shorthand': 2,
         'prefer-arrow-callback': 2,
