@@ -36,9 +36,11 @@ module.exports = {
         'no-prototype-builtins': 0,
         'no-regex-spaces': 2,
         'no-sparse-arrays': 2,
+        'no-template-curly-in-string': 2,
         'no-unexpected-multiline': 2,
         'no-unreachable': 2,
         'no-unsafe-finally': 2,
+        'no-unsafe-negation': 2,
         'use-isnan': 2,
         'valid-typeof': 2,
 
@@ -46,6 +48,7 @@ module.exports = {
         'accessor-pairs': 2,
         'array-callback-return': 1,
         'block-scoped-var': 2,
+        'class-methods-use-this': 0,
         complexity: 0,
         'consistent-return': 0,
         curly: [2, 'multi-line'],
@@ -68,6 +71,7 @@ module.exports = {
         'no-extra-label': 2,
         'no-extra-parens': 0,
         'no-fallthrough': 2,
+        'no-global-assign': 0,
         'no-floating-decimal': 2,
         'no-implicit-coercion': 2,
         'no-implied-eval': 2,
@@ -89,6 +93,7 @@ module.exports = {
         'no-process-env': 0,
         'no-proto': 2,
         'no-redeclare': 2,
+        'no-restricted-properties': 0,
         'no-return-assign': [2, 'always'],
         'no-script-url': 2,
         'no-self-assign': 1,
@@ -161,6 +166,7 @@ module.exports = {
         'computed-property-spacing': [2, 'never'],
         'consistent-this': 0,
         'eol-last': 2,
+        'func-call-spacing': 2,
         'func-names': 0,
         'func-style': [2, 'declaration', {
             allowArrowFunctions: true
@@ -178,13 +184,16 @@ module.exports = {
         }],
         'keyword-spacing': 2,
         'linebreak-style': 0,
+        'line-comment-position': 0,
         'lines-around-comment': [2, {
             beforeBlockComment: true,
             beforeLineComment: true
         }],
+        'lines-around-directive': 2,
         'max-lines': 0,
         'max-nested-callbacks': [1, 4],
         'max-statements-per-line': 1,
+        'multiline-ternary': 0,
         'new-cap': [2, {
             newIsCap: true,
             capIsNew: true
@@ -208,6 +217,7 @@ module.exports = {
         'no-param-reassign': 0,
         'no-restricted-syntax': [2, 'WithStatement'],
         'no-spaced-func': 2,
+        'no-tabs': 2,
         'no-ternary': 0,
         'no-trailing-spaces': 2,
         'no-underscore-dangle': 0,
@@ -239,6 +249,7 @@ module.exports = {
         }],
         semi: [2, 'always'],
         'sort-imports': 0,
+        'sort-keys': 0,
         'sort-vars': 0,
         'space-before-blocks': [2, 'always'],
         'space-before-function-paren': [2, {
@@ -292,6 +303,7 @@ module.exports = {
         'object-shorthand': 2,
         'prefer-arrow-callback': 2,
         'prefer-const': 2,
+        'prefer-numeric-literals': 2,
 
         // TODO: Enable when Node.js officially supports Reflect ES2015 in LTS
         'prefer-reflect': [0, {
@@ -303,6 +315,7 @@ module.exports = {
         'prefer-spread': 2,
         'prefer-template': 2,
         'require-yield': 2,
+        'symbol-description': 1,
         'template-curly-spacing': 2,
         'yield-star-spacing': [2, 'before']
     }
