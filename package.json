@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-thedark1337",
   "description": "ESLint Shareable Config for Thedark1337",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "author": "Thedark1337 <thedark1337@thedark1337.com> (https://thedark1337.com/)",
   "bugs": {
     "url": "https://github.com/thedark1337/eslint-config-thedark1337/issues"
@@ -11,12 +11,12 @@
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
-    "eslint": "^2.13.1",
+    "eslint": "^3.6.1",
     "eslint-plugin-babel": "^3.3.0",
     "mocha": "^3.0.2",
     "mocha-eslint": "^3.0.1",
     "temp-write": "^2.1.0",
-    "unexpected": "^10.18.0"
+    "unexpected": "^10.18.1"
   },
   "engines": {
     "node": ">=4.0"
@@ -38,7 +38,7 @@
   "license": "GPL-3.0",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^2.13.1"
+    "eslint": "^3.6.1"
   },
   "repository": {
     "type": "git",
