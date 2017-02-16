@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-thedark1337",
   "description": "ESLint Shareable Config for Thedark1337",
-  "version": "3.0.0",
+  "version": "3.14.0",
   "author": "Thedark1337 <thedark1337@thedark1337.com> (https://thedark1337.com/)",
   "bugs": {
     "url": "https://github.com/thedark1337/eslint-config-thedark1337/issues"
