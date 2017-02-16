@@ -96,11 +96,11 @@ describe('ESNext Rules Test', () => {
     describe('Linting Errors', () => {
 
         it('Should return errors for strict, newline-after-var, prefer-const and babel/object-shorthand', () => {
-            const errors = runLint('export class Foo { function() {\n    const x = 0;\n    const y = 0;\n    const z = 0;\n    const foo = 0;\n    console.log(foo);\n    let bar = {\n        x: x,\n        y: y,\n        z: z\n    };\n\n    console.log(bar);\n} }\n', es6Conf);
+            const errors = runLint('export class Foo {\n    function() {\n        const x = 0;\n        const y = 0;\n        const z = 0;\n        const foo = 0;\n\n        console.log(foo);\n        let bar = {\n            x: x,\n            y: y,\n            z: z\n        };\n        console.log(bar);\n        }\n    }\n', es6Conf);
 
             expect(errors[0].ruleId, 'to be', 'newline-after-var');
             expect(errors[1].ruleId, 'to be', 'prefer-const');
-            expect(errors[2].ruleId, 'to be', 'babel/object-shorthand');
+            expect(errors[2].ruleId, 'to be', 'object-shorthand');
         });
     });
 });

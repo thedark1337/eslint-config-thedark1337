@@ -15,6 +15,7 @@ module.exports = {
 
         // Possible Errors
         'comma-dangle': 2,
+        'no-await-in-loop': 2,
         'no-cond-assign': 2,
         'no-constant-condition': 2,
         'no-control-regex': 2,
@@ -82,6 +83,7 @@ module.exports = {
         'no-lone-blocks': 2,
         'no-loop-func': 2,
         'no-magic-numbers': 0,
+        'no-multi-assign': 0,
         'no-multi-spaces': 2,
         'no-multi-str': 2,
         'no-native-reassign': 2,
@@ -95,6 +97,7 @@ module.exports = {
         'no-redeclare': 2,
         'no-restricted-properties': 0,
         'no-return-assign': [2, 'always'],
+        'no-return-await': 2,
         'no-script-url': 2,
         'no-self-assign': 1,
         'no-self-compare': 2,
@@ -106,10 +109,13 @@ module.exports = {
         'no-useless-call': 2,
         'no-useless-concat': 2,
         'no-useless-escape': 2,
+        'no-useless-return': 0,
         'no-void': 2,
         'no-warning-comments': 1,
         'no-with': 2,
+        'prefer-promise-reject-errors': 0,
         radix: 2,
+        'require-await': 2,
         'wrap-iife': [2, 'inside'],
         yoda: 2,
 
@@ -158,6 +164,7 @@ module.exports = {
         camelcase: [2, {
             properties: 'always'
         }],
+        'capitalized-comments': 0,
         'comma-spacing': [2, {
             before: false,
             after: true
@@ -168,6 +175,7 @@ module.exports = {
         'eol-last': 2,
         'func-call-spacing': 2,
         'func-names': 0,
+        'func-name-matching': 0,
         'func-style': [2, 'declaration', {
             allowArrowFunctions: true
         }],
@@ -235,7 +243,9 @@ module.exports = {
         'object-property-newline': [2, {
             allowMultiplePropertiesPerLine: true
         }],
-        'one-var': [2, 'never'],
+        'one-var': [2, {
+            initialized: 'never'
+        }],
         'one-var-declaration-per-line': [2, 'initializations'],
         'operator-assignment': [2, 'always'],
         'operator-linebreak': [2, 'after'],
@@ -259,6 +269,7 @@ module.exports = {
         'space-in-parens': [2, 'never'],
         'space-infix-ops': 2,
         'space-unary-ops': 2,
+        'template-tag-spacing': 2,
         'spaced-comment': [1, 'always'],
         'unicode-bom': 0,
         'valid-jsdoc': [2, {
@@ -303,15 +314,12 @@ module.exports = {
         'object-shorthand': 2,
         'prefer-arrow-callback': 2,
         'prefer-const': 2,
+        'prefer-destructuring': 1,
         'prefer-numeric-literals': 2,
-
-        // TODO: Enable when Node.js officially supports Reflect ES2015 in LTS
-        'prefer-reflect': [0, {
+        'prefer-reflect': [1, {
             exceptions: ['delete']
         }],
-
-        // TODO: Enable when Node.js officially supports rest params in LTS.
-        'prefer-rest-params': 0,
+        'prefer-rest-params': 1,
         'prefer-spread': 2,
         'prefer-template': 2,
         'require-yield': 2,
