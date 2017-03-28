@@ -3,20 +3,18 @@
   "description": "ESLint Shareable Config for Thedark1337",
   "version": "3.14.0",
   "author": "Thedark1337 <thedark1337@thedark1337.com> (https://thedark1337.com/)",
-  "bugs": {
-    "url": "https://github.com/thedark1337/eslint-config-thedark1337/issues"
-  },
+  "bugs": "https://github.com/thedark1337/eslint-config-thedark1337/issues",
   "dependencies": {
     "lodash.merge": "^4.6.0"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "eslint": "^3.15.0",
-    "eslint-plugin-babel": "^4.0.1",
+    "babel-eslint": "^7.2.1",
+    "eslint": "^3.18.0",
+    "eslint-plugin-babel": "^4.1.1",
     "mocha": "^3.2.0",
     "mocha-eslint": "^3.0.1",
-    "temp-write": "^3.0.0",
-    "unexpected": "^10.25.0"
+    "temp-write": "^3.2.0",
+    "unexpected": "^10.26.3"
   },
   "engines": {
     "node": ">=4.0"
@@ -38,12 +36,9 @@
   "license": "GPL-3.0",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^3.14.0"
+    "eslint": "^3.17.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/thedark1337/eslint-config-thedark1337.git"
-  },
+  "repository": "thedark1337/eslint-config-thedark1337",
   "scripts": {
     "test": "mocha"
   }
