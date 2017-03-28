@@ -1,5 +1,7 @@
 # eslint-config-thedark1337  [![Build Status](https://img.shields.io/travis/thedark1337/eslint-config-thedark1337.svg)](https://travis-ci.org/thedark1337/eslint-config-thedark1337)   [![npm version](http://img.shields.io/npm/v/eslint-config-thedark1337.svg)](https://npmjs.org/package/eslint-config-thedark1337) [![npm downloads](https://img.shields.io/npm/dm/eslint-config-thedark1337.svg)](https://npmjs.org/package/eslint-config-thedark1337) [![bitHound Overall Score](https://www.bithound.io/github/thedark1337/eslint-config-thedark1337/badges/score.svg)](https://www.bithound.io/github/thedark1337/eslint-config-thedark1337) [![bitHound Dependencies](https://www.bithound.io/github/thedark1337/eslint-config-thedark1337/badges/dependencies.svg)](https://www.bithound.io/github/thedark1337/eslint-config-thedark1337/master/dependencies/npm) [![bitHound Dev Dependencies](https://www.bithound.io/github/thedark1337/eslint-config-thedark1337/badges/devDependencies.svg)](https://www.bithound.io/github/thedark1337/eslint-config-thedark1337/master/dependencies/npm)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/thedark1337/eslint-config-thedark1337.svg)](https://greenkeeper.io/)
+
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for [Thedark1337](https://github.com/thedark1337)
 
 ## Install
