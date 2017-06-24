@@ -36,7 +36,7 @@
   "license": "GPL-3.0",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^3.17.0"
+    "eslint": "^4.1.0"
   },
   "repository": "thedark1337/eslint-config-thedark1337",
   "scripts": {
