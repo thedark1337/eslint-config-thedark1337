@@ -14,7 +14,9 @@ module.exports = {
     rules: {
 
         // Possible Errors
+
         'comma-dangle': 2,
+        'for-direction': 2,
         'no-await-in-loop': 2,
         'no-compare-neg-zero': 2,
         'no-cond-assign': 2,
@@ -132,23 +134,30 @@ module.exports = {
         'no-shadow': 2,
         'no-shadow-restricted-names': 2,
         'no-undef-init': 2,
-        'no-undef': [2, {
-            typeof: true
-        }],
+        'no-undef': [
+            2, {
+                typeof: true
+            }
+        ],
         'no-undefined': 0,
-        'no-unused-vars': [1, {
-            vars: 'all',
-            args: 'none'
-        }],
+        'no-unused-vars': [
+            1, {
+                vars: 'all',
+                args: 'none'
+            }
+        ],
         'no-use-before-define': [2, 'nofunc'],
 
         // Node.js
         'callback-return': 0,
         'global-require': 0,
         'handle-callback-err': 1,
-        'no-mixed-requires': [2, {
-            grouping: true
-        }],
+        'no-buffer-constructor': 2,
+        'no-mixed-requires': [
+            2, {
+                grouping: true
+            }
+        ],
         'no-new-require': 2,
         'no-path-concat': 2,
         'no-process-exit': 2,
@@ -157,19 +166,27 @@ module.exports = {
         'no-sync': 2,
 
         // Stylistic Issues
+        'array-bracket-newline': 2,
         'array-bracket-spacing': [2, 'never'],
+        'array-element-newline': 0,
         'block-spacing': [2, 'always'],
-        'brace-style': [2, '1tbs', {
-            allowSingleLine: false
-        }],
-        camelcase: [2, {
-            properties: 'always'
-        }],
+        'brace-style': [
+            2, '1tbs', {
+                allowSingleLine: false
+            }
+        ],
+        camelcase: [
+            2, {
+                properties: 'always'
+            }
+        ],
         'capitalized-comments': 0,
-        'comma-spacing': [2, {
-            before: false,
-            after: true
-        }],
+        'comma-spacing': [
+            2, {
+                before: false,
+                after: true
+            }
+        ],
         'comma-style': [2, 'last'],
         'computed-property-spacing': [2, 'never'],
         'consistent-this': 0,
@@ -177,36 +194,47 @@ module.exports = {
         'func-call-spacing': 2,
         'func-names': 0,
         'func-name-matching': 0,
-        'func-style': [2, 'declaration', {
-            allowArrowFunctions: true
-        }],
+        'func-style': [
+            2, 'declaration', {
+                allowArrowFunctions: true
+            }
+        ],
         'id-blacklist': 0,
         'id-length': 0,
         'id-match': 0,
-        indent: [2, 4, {
-            SwitchCase: 1
-        }],
+        indent: [
+            2, 4, {
+                SwitchCase: 1
+            }
+        ],
+        'indent-legacy': 0,
         'jsx-quotes': 2,
-        'key-spacing': [2, {
-            beforeColon: false,
-            afterColon: true
-        }],
+        'key-spacing': [
+            2, {
+                beforeColon: false,
+                afterColon: true
+            }
+        ],
         'keyword-spacing': 2,
         'linebreak-style': 0,
         'line-comment-position': 0,
-        'lines-around-comment': [2, {
-            beforeBlockComment: true,
-            beforeLineComment: true
-        }],
+        'lines-around-comment': [
+            2, {
+                beforeBlockComment: true,
+                beforeLineComment: true
+            }
+        ],
         'lines-around-directive': 2,
         'max-lines': 0,
         'max-nested-callbacks': [1, 4],
         'max-statements-per-line': 1,
         'multiline-ternary': 0,
-        'new-cap': [2, {
-            newIsCap: true,
-            capIsNew: true
-        }],
+        'new-cap': [
+            2, {
+                newIsCap: true,
+                capIsNew: true
+            }
+        ],
         'new-parens': 2,
         'newline-after-var': 2,
         'newline-before-return': 1,
@@ -217,9 +245,11 @@ module.exports = {
         'no-lonely-if': 1,
         'no-mixed-operators': 2,
         'no-mixed-spaces-and-tabs': 2,
-        'no-multiple-empty-lines': [2, {
-            max: 1
-        }],
+        'no-multiple-empty-lines': [
+            2, {
+                max: 1
+            }
+        ],
         'no-negated-condition': 2,
         'no-nested-ternary': 0,
         'no-new-object': 2,
@@ -233,53 +263,68 @@ module.exports = {
         'no-unneeded-ternary': 2,
         'no-whitespace-before-property': 2,
         'nonblock-statement-body-position': 2,
-        'object-curly-newline': [2, {
-            ObjectExpression: {
-                minProperties: 1
-            },
-            ObjectPattern: {
-                minProperties: 1
+        'object-curly-newline': [
+            2, {
+                ObjectExpression: {
+                    minProperties: 1
+                },
+                ObjectPattern: {
+                    minProperties: 1
+                }
             }
-        }],
+        ],
         'object-curly-spacing': [2, 'always'],
-        'object-property-newline': [2, {
-            allowMultiplePropertiesPerLine: true
-        }],
-        'one-var': [2, {
-            initialized: 'never'
-        }],
+        'object-property-newline': [
+            2, {
+                allowMultiplePropertiesPerLine: true
+            }
+        ],
+        'one-var': [
+            2, {
+                initialized: 'never'
+            }
+        ],
         'one-var-declaration-per-line': [2, 'initializations'],
         'operator-assignment': [2, 'always'],
         'operator-linebreak': [2, 'after'],
         'padded-blocks': 0,
+        'padding-line-between-statements': 0,
         'quote-props': [2, 'as-needed'],
         quotes: [2, 'single', 'avoid-escape'],
         'require-jsdoc': 0,
-        'semi-spacing': [2, {
-            before: false,
-            after: true
-        }],
+        'semi-spacing': [
+            2, {
+                before: false,
+                after: true
+            }
+        ],
+        'semi-style': 2,
         semi: [2, 'always'],
         'sort-imports': 0,
         'sort-keys': 0,
         'sort-vars': 0,
         'space-before-blocks': [2, 'always'],
-        'space-before-function-paren': [2, {
-            anonymous: 'never',
-            named: 'never'
-        }],
+        'space-before-function-paren': [
+            2, {
+                anonymous: 'never',
+                named: 'never'
+            }
+        ],
         'space-in-parens': [2, 'never'],
         'space-infix-ops': 2,
         'space-unary-ops': 2,
         'template-tag-spacing': 2,
         'spaced-comment': [1, 'always'],
+        'switch-colon-spacing': 2,
         'unicode-bom': 0,
-        'valid-jsdoc': [2, {
-            prefer: {
-                return: 'returns'
-            },
-            requireReturn: false
-        }],
+        'valid-jsdoc': [
+            2, {
+                prefer: {
+                    return: 'returns'
+                },
+                requireReturn: false
+            }
+        ],
         'vars-on-top': 0,
         'wrap-regex': 0,
 
@@ -294,10 +339,12 @@ module.exports = {
         // ES2015
         'arrow-body-style': 0,
         'arrow-parens': [2, 'always'],
-        'arrow-spacing': [2, {
-            before: true,
-            after: true
-        }],
+        'arrow-spacing': [
+            2, {
+                before: true,
+                after: true
+            }
+        ],
         'constructor-super': 2,
         'rest-spread-spacing': [2, 'never'],
         'generator-star-spacing': [2, 'both'],
@@ -318,9 +365,11 @@ module.exports = {
         'prefer-const': 2,
         'prefer-destructuring': 1,
         'prefer-numeric-literals': 2,
-        'prefer-reflect': [1, {
-            exceptions: ['delete']
-        }],
+        'prefer-reflect': [
+            1, {
+                exceptions: ['delete']
+            }
+        ],
         'prefer-rest-params': 1,
         'prefer-spread': 2,
         'prefer-template': 2,

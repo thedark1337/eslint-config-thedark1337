@@ -45,7 +45,7 @@ describe('Main Rules Test', () => {
         });
 
         it('Should be valid configuration', () => {
-            expect(validator.validate(mainConf, 'index.js'), 'to be undefined');
+            validator.validate(mainConf, 'index.js');
         });
 
         it('Should be objects for parserOptions, env, rules', () => {
