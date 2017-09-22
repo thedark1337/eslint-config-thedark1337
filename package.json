@@ -8,13 +8,13 @@
     "lodash.merge": "^4.6.0"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.1",
-    "eslint": "^4.1.1",
-    "eslint-plugin-babel": "^4.1.1",
-    "mocha": "^3.2.0",
-    "mocha-eslint": "^3.0.1",
+    "babel-eslint": "^8.0.0",
+    "eslint": "^4.7.2",
+    "eslint-plugin-babel": "^4.1.2",
+    "mocha": "^3.5.3",
+    "mocha-eslint": "^4.1.0",
     "temp-write": "^3.2.0",
-    "unexpected": "^10.26.3"
+    "unexpected": "^10.35.0"
   },
   "engines": {
     "node": ">=4.0"
@@ -36,7 +36,7 @@
   "license": "GPL-3.0",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^4.11.0"
+    "eslint": "^4.7.0"
   },
   "repository": "thedark1337/eslint-config-thedark1337",
   "scripts": {

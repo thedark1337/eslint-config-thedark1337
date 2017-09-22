@@ -6,7 +6,6 @@ const fs = require('fs');
 const path = require('path');
 const replacements = require('eslint/conf/replacements.json').rules;
 const tempWrite = require('temp-write');
-const validator = require('eslint/lib/config/config-validator');
 const eslintRules = Object.assign(getRuleMap(path.join(__dirname, '../node_modules/eslint/lib/rules/'), ''));
 
 function runLint(str, conf) {
@@ -44,10 +43,6 @@ describe('Main Rules Test', () => {
             expect(mainKeys, 'to equal', eslintKeys);
         });
 
-        it('Should be valid configuration', () => {
-            validator.validate(mainConf, 'index.js');
-        });
-
         it('Should be objects for parserOptions, env, rules', () => {
             expect(mainConf.parserOptions, 'to be an', 'object');
             expect(mainConf.env, 'to be an', 'object');
@@ -58,7 +53,7 @@ describe('Main Rules Test', () => {
     describe('Linting Errors', () => {
 
         it('Should return errors for no-trailing-spaces, strict, quotes, and semicolons', () => {
-            const errors = runLint(' \n console.log("thedark1337 Wins")\n', mainConf);
+            const errors = runLint(' \nconsole.log("thedark1337 Wins")\n', mainConf);
 
             expect(errors[0].ruleId, 'to be', 'no-trailing-spaces');
             expect(errors[1].ruleId, 'to be', 'strict');
