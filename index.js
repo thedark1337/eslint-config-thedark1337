@@ -192,6 +192,7 @@ module.exports = {
         'id-blacklist': 0,
         'id-length': 0,
         'id-match': 0,
+        'implicit-arrow-linebreak': 2,
         indent: [2, 4, {
             SwitchCase: 1
         }],
@@ -205,6 +206,7 @@ module.exports = {
         ],
         'keyword-spacing': 2,
         'linebreak-style': 0,
+        'lines-between-class-members': 2,
         'line-comment-position': 0,
         'lines-around-comment': [2, {
             beforeBlockComment: true,
@@ -214,6 +216,7 @@ module.exports = {
         'max-lines': 0,
         'max-nested-callbacks': [1, 4],
         'max-statements-per-line': 1,
+        'multiline-comment-style': 2,
         'multiline-ternary': 0,
         'new-cap': [2, {
             newIsCap: true,
