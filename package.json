@@ -11,7 +11,7 @@
     "babel-eslint": "^8.0.3",
     "eslint": "^4.13.1",
     "eslint-plugin-babel": "^5.0.0",
-    "mocha": "^5.0.0",
+    "mocha": "^6.0.0",
     "mocha-eslint": "^4.1.0",
     "temp-write": "^3.2.0",
     "unexpected": "^10.36.2"
