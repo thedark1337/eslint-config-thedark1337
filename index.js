@@ -20,6 +20,7 @@ module.exports = {
         'getter-return': [2, {
             allowImplicit: true
         }],
+        'no-async-promise-executor': 2,
         'no-await-in-loop': 2,
         'no-compare-neg-zero': 2,
         'no-cond-assign': 2,
@@ -38,6 +39,7 @@ module.exports = {
         'no-inner-declarations': 2,
         'no-invalid-regexp': 2,
         'no-irregular-whitespace': 2,
+        'no-misleading-character-class': 2,
         'no-negated-in-lhs': 2,
         'no-obj-calls': 2,
         'no-prototype-builtins': 0,
@@ -48,6 +50,7 @@ module.exports = {
         'no-unreachable': 2,
         'no-unsafe-finally': 2,
         'no-unsafe-negation': 2,
+        'require-atomic-updates': 2,
         'use-isnan': 2,
         'valid-typeof': 2,
 
@@ -64,6 +67,7 @@ module.exports = {
         'dot-location': [2, 'property'],
         eqeqeq: [2, 'smart'],
         'guard-for-in': 2,
+        'max-classes-per-file': 0,
         'no-alert': 2,
         'no-caller': 2,
         'no-case-declarations': 0,
@@ -112,6 +116,7 @@ module.exports = {
         'no-unmodified-loop-condition': 2,
         'no-unused-expressions': 2,
         'no-unused-labels': 2,
+        'no-useless-catch': 2,
         'no-useless-call': 2,
         'no-useless-concat': 2,
         'no-useless-escape': 2,
@@ -122,6 +127,7 @@ module.exports = {
         'prefer-promise-reject-errors': 0,
         radix: 2,
         'require-await': 2,
+        'require-unicode-regexp': 0,
         'wrap-iife': [2, 'inside'],
         yoda: 2,
 
@@ -214,6 +220,7 @@ module.exports = {
         }],
         'lines-around-directive': 2,
         'max-lines': 0,
+        'max-lines-per-function': 1,
         'max-nested-callbacks': [1, 4],
         'max-statements-per-line': 1,
         'multiline-comment-style': 2,
@@ -253,7 +260,7 @@ module.exports = {
                 minProperties: 1
             },
             ObjectPattern: {
-                minProperties: 1
+                minProperties: 2
             }
         }],
         'object-curly-spacing': [2, 'always'],
@@ -268,6 +275,7 @@ module.exports = {
         'operator-linebreak': [2, 'after'],
         'padded-blocks': 0,
         'padding-line-between-statements': 0,
+        'prefer-object-spread': 0,
         'quote-props': [2, 'as-needed'],
         quotes: [2, 'single', 'avoid-escape'],
         'require-jsdoc': 0,
