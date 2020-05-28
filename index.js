@@ -2,7 +2,7 @@
 
 module.exports = {
     parserOptions: {
-        ecmaVersion: 6,
+        ecmaVersion: 11,
         ecmaFeatures: {
             jsx: true
         }
@@ -28,6 +28,7 @@ module.exports = {
         'no-control-regex': 2,
         'no-debugger': 2,
         'no-dupe-args': 2,
+        'no-dupe-else-if': 2,
         'no-dupe-keys': 2,
         'no-duplicate-case': 2,
         'no-empty': 2,
@@ -36,9 +37,11 @@ module.exports = {
         'no-extra-boolean-cast': 2,
         'no-extra-semi': 2,
         'no-func-assign': 2,
+        'no-import-assign': 1,
         'no-inner-declarations': 2,
         'no-invalid-regexp': 2,
         'no-irregular-whitespace': 2,
+        'no-loss-of-precision': 2,
         'no-misleading-character-class': 2,
         'no-negated-in-lhs': 2,
         'no-obj-calls': 2,
@@ -50,6 +53,7 @@ module.exports = {
         'no-unreachable': 2,
         'no-unsafe-finally': 2,
         'no-unsafe-negation': 2,
+        'no-useless-backreference': 2,
         'require-atomic-updates': 2,
         'use-isnan': 2,
         'valid-typeof': 2,
@@ -63,14 +67,18 @@ module.exports = {
         'consistent-return': 0,
         curly: [2, 'multi-line'],
         'default-case': 2,
+        'default-case-last': 2,
+        'default-param-last': 1,
         'dot-notation': 2,
         'dot-location': [2, 'property'],
         eqeqeq: [2, 'smart'],
+        'grouped-accessor-pairs': 0,
         'guard-for-in': 2,
         'max-classes-per-file': 0,
         'no-alert': 2,
         'no-caller': 2,
         'no-case-declarations': 0,
+        'no-constructor-return': 1,
         'no-div-regex': 2,
         'no-else-return': 2,
         'no-eq-null': 0,
@@ -112,6 +120,7 @@ module.exports = {
         'no-self-assign': 1,
         'no-self-compare': 2,
         'no-sequences': 2,
+        'no-setter-return': 2,
         'no-throw-literal': 2,
         'no-unmodified-loop-condition': 2,
         'no-unused-expressions': 2,
@@ -124,7 +133,9 @@ module.exports = {
         'no-void': 2,
         'no-warning-comments': 1,
         'no-with': 2,
+        'prefer-named-capture-group': 1,
         'prefer-promise-reject-errors': 0,
+        'prefer-regex-literals': 2,
         radix: 2,
         'require-await': 2,
         'require-unicode-regexp': 0,
@@ -140,6 +151,7 @@ module.exports = {
         'no-delete-var': 2,
         'no-label-var': 2,
         'no-restricted-globals': 0,
+        'no-restricted-exports': 0,
         'no-shadow': 2,
         'no-shadow-restricted-names': 2,
         'no-undef-init': 2,
@@ -188,6 +200,7 @@ module.exports = {
         'computed-property-spacing': [2, 'never'],
         'consistent-this': 0,
         'eol-last': 2,
+        'function-call-argument-newline': ['error', 'consistent'],
         'func-call-spacing': 2,
         'func-names': 0,
         'func-name-matching': 0,
@@ -256,12 +269,7 @@ module.exports = {
         'no-whitespace-before-property': 2,
         'nonblock-statement-body-position': 2,
         'object-curly-newline': [2, {
-            ObjectExpression: {
-                minProperties: 1
-            },
-            ObjectPattern: {
-                minProperties: 2
-            }
+            consistent: true
         }],
         'object-curly-spacing': [2, 'always'],
         'object-property-newline': [2, {
@@ -276,6 +284,7 @@ module.exports = {
         'padded-blocks': 0,
         'padding-line-between-statements': 0,
         'prefer-object-spread': 0,
+        'prefer-exponentiation-operator': 1,
         'quote-props': [2, 'as-needed'],
         quotes: [2, 'single', 'avoid-escape'],
         'require-jsdoc': 0,

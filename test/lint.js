@@ -1,3 +1,7 @@
+// TODO: uncomment when mocha-eslint updates to 7.x for ESLint...
+
+/**
+
 'use strict';
 
 const isCI = Boolean(process.env.CI || process.env.CONTINUOUS_INTEGRATION);
@@ -13,3 +17,4 @@ const paths = [
 ];
 
 lint(paths, options);
+**/
