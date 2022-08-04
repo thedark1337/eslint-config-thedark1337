@@ -12,10 +12,6 @@
 npm i -D eslint-config-thedark1337
 ```
 
-**NOTE:** If using esnext,  [Babel-eslint](npmjs.com/package/babel-eslint) and [eslint-plugin-babel](https://www.npmjs.com/package/eslint-plugin-babel) must be used. If using ESLint@2 please use babel-eslint@next (beta)
-```javascript
-npm i -D babel-eslint eslint-plugin-babel
-```
 
 ## Usage
 
@@ -53,12 +49,11 @@ module.exports = {
         "thedark1337"
 ```
 
-There are also configs for coding in browser, and in ES2015+.
+There are also configs for coding in browser.
 
 To use them change extends to one of these:
 
 * thedark1337/browser
-* thedark1337/esnext
 
 
 Thank you to Sindresorhus for their [XO](https://github.com/sindresorhus/eslint-config-xo) Config.
@@ -69,7 +64,7 @@ Thank you to Mysticatea for their [Config](https://github.com/mysticatea/eslint-
 
 [GPL License](https://github.com/thedark1337/eslint-config-thedark1337/blob/master/LICENSE)
 
-Copyright &copy; 2015 Thedark1337
+Copyright &copy; 2022 Thedark1337
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 

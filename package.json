@@ -1,24 +1,22 @@
 {
   "name": "eslint-config-thedark1337",
   "description": "ESLint Shareable Config for Thedark1337",
-  "version": "7.0.0",
+  "version": "8.0.0",
   "author": "Thedark1337 <thedark1337@thedark1337.com> (https://thedark1337.com/)",
   "bugs": "https://github.com/thedark1337/eslint-config-thedark1337/issues",
   "dependencies": {
     "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
-    "eslint": "^7.2.0",
-    "mocha": "^7.2.0",
-    "mocha-eslint": "^6.0.0",
-    "unexpected": "^11.14.0"
+    "eslint": "^8.21.0",
+    "mocha": "^10.0.0",
+    "unexpected": "^13.0.0"
   },
   "engines": {
-    "node": ">=10.0"
+    "node": ">=14"
   },
   "files": [
     "index.js",
-    "esnext.js",
     "browser.js"
   ],
   "keywords": [
@@ -33,7 +31,7 @@
   "license": "GPL-3.0",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^7.x"
+    "eslint": "^8.x"
   },
   "repository": "thedark1337/eslint-config-thedark1337",
   "scripts": {

@@ -5,7 +5,7 @@ const merge = require('lodash.merge');
 
 const newRules = {
     parserOptions: {
-        ecmaVersion: 5,
+        ecmaVersion: 6,
         ecmaFeatures: {
             modules: false
         }
