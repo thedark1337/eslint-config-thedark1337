@@ -1,4 +1,4 @@
-# eslint-config-thedark1337 [![npm version](http://img.shields.io/npm/v/eslint-config-thedark1337.svg)](https://npmjs.org/package/eslint-config-thedark1337) [![npm downloads](https://img.shields.io/npm/dm/eslint-config-thedark1337.svg)](https://npmjs.org/package/eslint-config-thedark1337) 
+# eslint-config-thedark1337 [![npm version](http://img.shields.io/npm/v/eslint-config-thedark1337.svg)](https://npmjs.org/package/eslint-config-thedark1337) [![npm downloads](https://img.shields.io/npm/dm/eslint-config-thedark1337.svg)](https://npmjs.org/package/eslint-config-thedark1337) [![Build Status](https://ci.tfle.xyz/job/ESLint%20Config%20TheDark1337/3/badge/icon)](https://ci.tfle.xyz/job/ESLint%20Config%20TheDark1337/3/)
 
 
 > ESLint [shareable config](https://eslint.org/docs/latest/developer-guide/shareable-configs.html) for [Thedark1337](https://github.com/thedark1337)
